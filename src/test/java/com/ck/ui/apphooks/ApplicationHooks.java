@@ -46,7 +46,7 @@ public class ApplicationHooks {
 		driver = factory.initDriver(browserName);
 	}
 	
-	@After(order = 0)
+	@After(order = 1)
 	public void quitBrowser() {
 		driver.quit();
 	}
